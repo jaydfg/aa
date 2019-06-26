@@ -1,0 +1,29 @@
+obj = pd.series([4,7,-5,3])## 添加索引
+obj2 = pd.series([4.2.1.4]),index=['d','c','a','b']##确定索引、
+obj2=[obj2 > 0]
+obj2*2
+np.exp(obj2)
+states = [1,2,3,4]
+obj4= pd.series (sdata,index=states)##确立索引后可引入
+obj4.name = 'population'##name属性
+DataFrame 
+data{'state':['a','b','c','d'],'year':['2000','2001','2002','2003'
+}
+frame = pd.DataFrame(np.arange(9).reshape((3,3)),index=['a','d','c'] columns=['Ohio','Texas',
+'Califoenia']
+new_obj = obj.drop('c')##丢弃
+obj['c']##索引
+data[:2]##切片
+data<5##通过布尔型DataFrame
+data[data < 5 ] = 0
+loc##通过行列选取
+data.loc['a',['two']]
+iloc##整数选取
+data.iloc[[1,2],[3,0,1]]##按查询顺序现实数据
+df.sum##求和
+df.cumsum
+return['a'].cov/corr['b']
+pd.value_counts(obj.values,sort=False)
+data = pd.DataFrame({'Qu1':[1,3,1,3,2]
+'Qu2':[2,3,1,2,3]
+'Qu3':1,3,3,4,3})
