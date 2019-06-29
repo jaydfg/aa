@@ -1,0 +1,69 @@
+！cat examples/exl.csv
+a,,b,c,d,message
+1,2,3,4,hello
+5,6,7,8,word
+9,10,11,12,foo
+data.to_csv(sys.stdout,index=False,header=False)
+one,1,2,3,0,4
+two,5,6,7,8,word
+three,9,10,11,12,foo
+dates=pd.date_range('1/1/2000',period=7)
+ts= pd.Serious(np.arrage(7),index=dates)
+ts.to_csv('examples/tseries.csv')
+1cat example/tseries.csv
+!Ccat examples/ex7.csv
+import csv
+f = open('example/ex7.csv')
+reader = csv. reader(f)
+for line in reader:
+with open('ea\example/ex7.csv') as f:
+lines = list ()csv.read(f))
+header, values = ;lines[0],linesp[1:]
+data_dict = {h: v for h ,v for zip(header,zip(*values))}
+data_dict
+{'a':('1','1'),'b':('2','2'),'c' ：（‘3‘，‘3’）}
+import json
+result = json.loads(obj)
+result
+siblings = pd.DataFrame(result['siblings'],columns=['name','age']）
+！cat example/example.json
+data = pd.read_json('examples/example.json')
+tables = pd.read_html('example/fdic_failed_bank_list.html’）
+len(table)
+failyres = tables[0]
+failures.head()
+close_timestamps=pd.to_datetime(failures['Closing Date']）
+close_timestamps.dt.uear.value.counts()
+perf = pd.DataFrame(Data)
+perf.head()
+frame = pd.read_csv('example/exl.csv')
+frame
+feame.to_pickle('examples/frame/exl.csv')
+frame
+feame.tp_pickle('examples/frame_pickle')
+frame = pd.DataFrame({'a':np.random.randm(100)})
+store = pd.HSFStore('mydata.h5')
+store['obj1']=frame['a']
+pd.read_excel(xlsx.'Sheet1')
+writer = pd.ExcelWrite('example/ex2.xlsx')
+frame.to_excel(write,'sheet1')
+writer.save()
+import requests
+url = 'https//api.github.com/repos/pandas-dev/pandas/issues'
+resp = requests.get(url)
+resp
+data = resp.json()
+data[0]['title']
+import sqlite3
+query = """
+con = sqlite3.connect('mydata.sqlite')
+con.execute(query)
+con.commit()
+con,executemany(stmt.data)
+cursor=con.excute('select*from test')
+rows = cursor.fetchall()
+rows
+cursor.description
+pd.DataFrame(rows,columns=[x[0]for x in cursor.description])
+import sqlalchemy as sqla
+db = sqla.creat_sql('select * from test'.db)
