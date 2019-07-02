@@ -1,1 +1,88 @@
+string_data = pd.Series(['aardvark','artichoke',np.nan,'avocado'])
+string_data
+string_data.isnull()
+sting_data[0] = None
+string_data.isnull()
+from numply import nan as NA 
+data = pa.Series([1,NA,3.5,NA,7])
+data.dropna()
+data.dropna(axis=1,how='all')
+df=pd.DataFrame(np.random.randm(7,3))
+df.iloc[:4,1]=NA
+df.iloc[:2,2]=NA
+df
+df.dropna()
+df.dropna(thresh=2)
+df.fillna(0)
+df.fillna({1:0.5,2:0})
+_ = df.fillna(0,inplace = True)
+df
+df + pd.DataFrame(np.random.randn(6,3))
+df.iloc[2:.1] = NA
+df.iloc[4:,2] =na
+df
+df. fillna(method = 'ffill')
+df.fillna(method+'ffill',limit = 2)
+data = pd . Series ([1.,NA,3.5,NA,7])
+data.fillna(data.mean())
+data = pa.DataFrame({'k1':['one',two']* 3 + ['two'],
+                      'k2':[1,1,2,3,
+data
+data.duplicated()
+data.drop_duplicates()
+data['v1'] = range(7)
+data.drop_duplicates([k1'])
+data.drop_duplicates(['k1','k2'],keep = 'last')
+lowercased = data['food'],str.lower()
+lowercased
+data['animal']= lowercased.map(meat_to_animal)
+data
+data['food'].map(lambda x :meat_to_animal[x.lower()])
+'dwarf' in b_list
+[4,None,'foo']+[7,8,(2,3)]
+x = [4,None,'foo']
+x.extend([7,8,(2,3)]
+a = [7,2,5,1,3]
+s.sort()
+b = ['saw','small','he','foxes','six']
+b.sort(key=len)
+import bisect 
+c = [1,2,2,2,3,4,7]
+bissect.bisect(c,2)
+bisect.bisect(2,2)
+bisect.bisect(c,5)
+bisect.insort(c,6)
+seq = [7,2,3,7,5,6,0,1]
+seq[1:5]
+seq[:5]
+sorted([7,1,2,6,0,3,2])
+zipped = zip(1,2)
+list(zipped
+list(reversed(range(10))
+empty_dict = {}
+d1 = {'a' : ' some value','b' :[1,2,3,4]}
+list (d1.keys())
+list(d1.value())
+d1.updata{'b':'foo",'c':12})
+mapping = dict(zip(range(5),reversed(range(5))))
+words = ['apple','bat','bar','atom','book']
+by_letter = {}
+for word in words :
+by_letter
+hash('string')
+hash('string')
+hash((1,2,(2,3)))
+val = 'a,b,guido'
+val.split(',')
+m = regex.search(text)
+text[m.start():m.end(()]
+print(regex.match(text))
+print(regex.sub('REDACTED',text))
+m = regex.match('wes@bright.net'
+regex.findall(text)
+matches.str.get(1）
+matches.str[0]
+
+
+
 
