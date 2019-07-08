@@ -1,1 +1,61 @@
-
+df = pd.DataFrame({'key1' : ['a','a','b','b','a'],'key2' : ['one','two','one','two','one'],:'data1':
+np.random.randn(5),'data':np.random.randn(5)})
+df
+grouped.mean()
+means.unstack()
+states = np.array(['Ohio','California','California','Ohio','Ohio'])
+years = np.array([2005,2005,2006,2005,2006])
+df['data1'].groupby([states,years]).mean()
+df.groupby('key1').mean()
+df.groupby(['key1','key2']).mean()
+df.group(['key1','key2']).size()
+for name,group in df.groupby('key1'):print(name) print(group)
+pieces = dict (list(df.groupby('key1')))
+pieces['b']
+grouped = df.groupby(df.dtypes,axis=1)
+grouped = df.groupby(df.dtypes,axis = 1)
+for dtype, group in groupde:print(dtype):print(group)
+df.groupby(['key1','key2'])[['data2']].mean()
+s_grouped = df.groupby(['key1','key2'])['data2']
+s_grouped.mean()
+people = pd..DataFrame(np.random.randn(5,5):colums=['a','b','c','d','e'],:index = ['Joe','Steve','Wes','Jim',Travis'])
+people.iloc[2:3,[1,2]] = np..nan 
+by_column = people.groupby(mapping,axis=1)
+by_column.sum()
+map_series = pd.Series(mapping)
+map_series
+people.groupby(len).sum()
+key_list = ['one','one','one','two','two']
+people.groupby([len,key_list]).min()
+hier_df = pd.DataFrame(np.random.randn(4,5) columns = columns)
+count sum mean median std.var min.max prod first.last
+grouped = df.groupby('key1')
+grouped['data1'].quantile(0.9)
+def peak_to_peak(arr):
+grouped.agg(peak_to_peak
+grouped.describe()
+tips = pd.read_csv('examples/tips.csv')
+tips['tip_pct'] = tips['tip']/tips['total_bill']
+tips[:6]
+tips = pd.read_csv('examples/tips.csv')
+tips['tip_pct'] = tips ['tip']/tips['total_bill']
+grouped = tips.groupby(['day','smoker'])
+grouped = tips.groupby(['day','smoker'])
+gruoped_pct.agg(['mean','std',peak_to_peak])
+grouped_pct.agg([('foo','mean'),('bar',np.std)])
+functions = ['count','mean','max']
+tips.groupby(['day','smoker'],as_index = False).mean()
+top(tips,n=6)
+tips.groupby(['smokeer','day']).apply(top,n=1,column = 'total_bill')
+result = tips.groupby('smoker')['tip_pct'].describe()
+result.unstack('smoker')
+tips.groupby('smoker',group_keys = False).apply(top)
+s = pd. Series(np.random.randn(6))
+s[:2] = np.nan
+s.fillna(s.mean())
+states = ['Ohio','New York','Vermont','Florida',
+group_key = ['East']*4+['west']
+grouped=df.groupby('category')
+get_wavg = lamda g: np.average(g['data']
+tips.pivot_table(index('day','smoker'])
+tips.pivot_table(['tip_pct','size'],index = ['time',columns='smoker')
