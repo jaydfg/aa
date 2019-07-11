@@ -31,4 +31,48 @@ my_cats_2.as_ordered()
 np.random.seed(12345)
 draws = np.random.randn(1000)
 draws = np.random.randn(1000)
-draws
+draws[:5]
+bins = pd.qcut(draws,4)
+bins
+bins = pd.qcut(draws,4,labels=['Q1','Q2','Q3','Q4'])
+bins
+bins.codes[:10]
+bins = pd.Series(bins,name = 'quartile')
+results['quaetile']
+N = 10000000
+draws = pd.Series(np.random.randn(N))
+labels = pd.Series(['foo','bar','baz','qux']*(N//4))
+categories = labels.astupe('category')
+labels.memory_usage()
+categorize.memory_usage()
+s = pd.Series(['a','b','c','d']*2)
+cat_s = s.astype('category')
+cat_s
+cat_s.cat.codes
+cat_s.cat.categories
+actual_categories = ['a','b','c','d','e']
+cat_s2 = cat_s.cat.set_categories(actual_categories)
+cat_s2
+cat_s.value_counts()
+cat_s2.value_counts()
+cat_s3 = cat_s[cat_s.isin(['a','b'])]
+cat_s3
+cat_s3.cat.remove_unused_categories()
+cat_s = pd.Series(['a','b','c','d']*2
+pd.get_dummies(cat_s)
+g = df.groupby ('key').value
+g.mean()
+g.transform(lambda x:x.mean())
+g.transform('mean')
+g.transform(lambda x :x*2)
+g.tramsform(lambda x :x.rank(ascending = False))
+g.transform(normalize)
+g.apply(normalize)
+g.transform('mean')
+normalized
+N =15 
+times = pd.date_range('2017-05-20 00:00',freq = 'lmin',periods = N)
+df. set_index ('time').resample('5min').coun()
+time_key = pd.TimeGrouper(5min')
+resampled.reset_index()
+
