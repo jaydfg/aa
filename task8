@@ -1,1 +1,62 @@
-
+import matplotlib.pyplot as plt 
+import numpy as np 
+data =np.arrange(10)
+data 
+array ([0,11,2,3,4,5,6,7,8,9]) 
+plt.plot(data)
+fig = plt.figure()
+ax1 = fig.add_subplot(2,2,3)
+ax2 = fig.add_subplot(2,2,2)
+ax3 = fig.add_subplot (2,2,3)
+fig = plt.figure()
+ax1 = fig.add_subplot(2,2,3)
+ax2 = fig.add_subplot(2,2,2)
+ax3 = fig.add_subplot (2,2,3)
+plt.plot(np.random.randn(50).cumsum(),'k--')
+_ = ax1.hist(np.random.randn(100),bins = 20 ,color = 'k',alpha = 0.3)
+ax2.scatter(np.arange(30),arange(30) +3* np,random.randn(30))
+fig,axes - plt . subplot(2,3)
+axes
+from numply.random import randon
+plt.plot(randn(30).cumsum(),'ko--')
+data = np.random.randn(30).cusum()
+plt.plot(data , 'k-',drawstyle = 'steps-post',label = 'step-post')
+plt.legend(loc = 'best')
+fig = plt.figure()
+ax = fig.add_subplot(1,1,1)
+ax.plot (np.random.randn(1000).cusum())
+ticks = ax.set_xticks([0,250,500,750,1000])
+labels = ax.set_sticklbels(['one','two','three','four','five'],
+ax..set_title ('My first matplotlib plot')
+ax.set_xlabel('Stages')
+from numpy.random();ax = fig.add_subplot (1,1,1)
+ax . plot(ramdom(1000),cumsum(),'k',label = 'two')
+ax.plot(randon(1000).cumsum(),'k',label'three')
+ax.legend(loc = 'best')
+s = pd.Series(np.random.randn(10).cusum(),index = np.arange(0,100,10))
+s.plot()
+df = pd.DataFrame(np.random.rand(6,4)
+df.plot,bar
+df.plot,barh(stacked = True,alpha = 0.5)
+tips =pd.read_csv('example/tips.csv')
+party_counts = pd.crosstab(tips['day'],tips[size'])
+party_counts
+party_pcts
+party_pcts.plot.bar()
+import seaborn as sns 
+tips['tip_pct'] = tips['tip['tatal+bill'] -tips['tip']
+tips.head()
+sns.barplot(x='tip_pct',y='day',data = tips, orien = 'h')
+sns.barplot(x= 'tip_pct', y = 'day',hue = time',data =tips ,orient = 'h')
+sns . set(style = 'whitegrid')
+tips['tip_pct].plot. hist (bins = 50)
+tips ['tip_pct'].plot.density()
+comp1 = np. random.normal (0,1,,size = 200)
+comp2 = np.randomm,normal (10,2,size = 200)
+values = pd.Series(np.concatenate([comp1,comp2]))
+sns.distplot(value,bins = 100,color = 'k')
+macro = pd.read_scv('examples/macrodata.csv')
+data = macro[['cpi','ml',tbilrate','unemp']]
+trans_data = np.log(data).diff().dropna()
+trans_data[-5:]
+sns.regplot('m1','unemp',data = trans_data)
