@@ -1,1 +1,64 @@
+from datetime import datetime 
+now = datetime.now()
+now
+now.year,now .month,now.day 
+delta = datetime(2011,1,7)- datetime(2008,6,24,8,15)
+delta 
+delta.days 
+delta.days
+delta.seconds 
+frome datetime import timedelta 
+start = datetime (2011,1,7)
+start + timedelta(12)
+start - 2* timedelta(12)
+stamp.strftime('%Y-%m-%d')
+value = '2011--01-93'
+datetime.strptime(value,'%Y-%m-%d')
+datestrs = ['7/6/2011','8/6/2011']
+[datetime.strptime(x,'%m/%d/%Y')for x in datastrs]
+from  dateutil.parser import parse
+parse('2011-01-03')
+parese (jan 31 , 1997 10:45 PM')
+parse('6/12/2011',dayfirst = True)
+datetime.datetime(datestrs)
+idx =pd.to_datetime(datastrs + [None])
+idx
+pd.isnull(idx)
+from datetime import datetime 
+ts = pd.Series (np.random.randn(6),index = dates)
+ts
+ts.index
+ts + ts[::2]
+ts.index.dtype
+stamp = ts.index[0]
+stamp
+stamp =ts.index[2]
+ts[stamp]
+ts['20110110']
+longer_ts = pd.Series(np.random.randn(1000),:index = pd.date_range('1/1/2000,period =  1000))
+longer_ts
+longer_ts['2001']
+longer_ts['2001-05']
+ts[datetime(2011,1,7):]
+dates = pd.DataFrame(np.random.randn(100,4),index = dates,columns = ['Colorado','Texas','New York','Ohio'])
+long_df.loc['5-2001']
+dates = pd.DateimeIndex([1/1/2000',
+dup_ts = pd.Series (np.arange(5),index = dates)
+dup_ts
+dup_ts.index.is_unique
+grouped = dup_ts.groupby(level=0)
+grouped.mesn()
+grouped.count()
+pd.date_range(end='2012-06-01',periods=20)
+frme pandas.tseries.offsets import Hour,Minute
+hour = Hour()
+hour
+four_hours = Hour(4)
+four_hours
+pd.date_range('2000-01-01','2000-01-03 23:59',freq = '4h')
+Hour(2)+ Minuts(30)
+pd.date_range('2000-01-01',periods = 10 , freq= '1h30min')
+ts.groupby(offset.rollforward).mean()
+ts.groupby(offset.rollforward).mean()
+ts.resample('M').mean(0
 
